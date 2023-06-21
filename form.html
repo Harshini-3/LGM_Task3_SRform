@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <h1><u> STUDENT ENROLLMENT FORM</u></h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="mail"><b>Email</b></label>
+                        <input type="text" name="mail" id="mail">
+                    </div>
+                   
+                   
+                    <fieldset class="form-group row">
+                        <legend class="col-form-label col-sm-2 float-sm-left pt-0"><b>Gender</b></legend>
+                        <div class="col-sm-10"><div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="gender" value="Male" >
+                             <label class="form-check-label" for="male"><b>Male</b></label>
+                            </div>
+                        
+                            <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="gender" value="Female"/> 
+                                <label class="form-check-label" for="female"><b>Female</b></label> &nbsp;
+                               
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-label col-sm-2 float-sm-left pt-0"><b>Skills</b></legend>
+                        <div class="col-sm-10"><div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="skills" id="skills" value="Java"/>
+                             <label class="form-check-label" for="java"><b>Java</b></label> &nbsp;
+                            
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="skills" id="skills" value="HTML"/>
+                                 <label class="form-check-label" for="html"><b>HTML</b></label> &nbsp;
+                                 
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="skills" id="skills" value="CSS"/> 
+                                    <label class="form-check-label" for="css"><b>CSS</b></label> &nbsp;
+                                   </div></div>
+                                </fieldset>
+                    <div class="form_action--button">
+                        <input type="submit" value="Enroll">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Gender</th>
+                                <th>Skills</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script1.js"></script>
+</body>
+</html>
